@@ -2,7 +2,7 @@
 in inches, and assign a value. Display the value in feet and inches; for example,
 86 inches becomes 7 feet and 2 inches. Be sure to use a named constant where
 appropriate. Save the program as InchesToFeet.java.*/
-
+import java.util.Scanner;
 
 public class InchesToFeet 
 {
@@ -10,23 +10,23 @@ public class InchesToFeet
 	{
 		
 		final int INCHE_IN_FEET = 12;
+		Scanner input = new Scanner(System.in);
 		
-		int inches = 86;
+		int feet;
+		int inchesReminder;
 		
-		double feet;
-		double inchesReminder;
+		System.out.print("Enter the inches >> ");
+		int inches = input.nextInt();
+		
+		
 		
 		feet = inches/INCHE_IN_FEET;
 		inchesReminder = inches % INCHE_IN_FEET;
 		
-		System.out.println(inches+ "inches becomes " +feet+ " and " +inchesReminder+ " inches.");
+		System.out.println(inches+ " inches becomes " +feet+ " feet and " +inchesReminder+ " inches.");
 		
 		
-		
-		
-		
-		
-		
+				
 		
 	}
 }
