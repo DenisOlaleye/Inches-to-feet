@@ -8,16 +8,25 @@ public class InchesToFeet
 {
 	public static void main (String [] args)
 	{
-		final double FEET_IN_INCHE = 0.0833333;
 		
-		int inches = 500;
-		int feet;
-		int inchesReminder;
+		final int INCHE_IN_FEET = 12;
 		
-		 feet = (int) (inches * FEET_IN_INCHE);
-		 inchesReminder = inches % (int) FEET_IN_INCHE;
-		 
-		 System.out.println(feet);
+		int inches = 86;
+		
+		double feet;
+		double inchesReminder;
+		
+		feet = inches/INCHE_IN_FEET;
+		inchesReminder = inches % INCHE_IN_FEET;
+		
+		System.out.println(inches+ "inches becomes " +feet+ " and " +inchesReminder+ " inches.");
+		
+		
+		
+		
+		
+		
+		
 		
 	}
 }
